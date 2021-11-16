@@ -2,7 +2,7 @@ import * as React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { Text, StyleSheet, View, Button } from "react-native";
-import Home from './Home';
+import Home from './screens/Home';
 
 const Stack = createStackNavigator();
 
@@ -13,7 +13,7 @@ export default function MyStack() {
         <Stack.Screen
           name="Home"
           component={Home}
-          options={{title: 'bem-vindo!'}}
+          // options={{title: 'bem-vindo!'}}
         />
         <Stack.Screen
           name="AnotherPage"
